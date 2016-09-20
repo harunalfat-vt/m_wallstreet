@@ -1,0 +1,58 @@
+
+<h2>
+  Merchants
+</h2>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				#
+			</th>
+			<th>
+				MID
+			</th>
+			<th>
+				Payment Type
+			</th>
+      <th>
+				Acquiring Provider
+			</th>
+			<th>
+				Payout Type
+			</th>
+      <th>
+        Begin Date
+      </th>
+      <th>
+        End Date
+      </th>
+		</tr>
+	</thead>
+	<tbody>
+    <% settings.each_with_index do |setting, index| %>
+    <tr>
+      <td>
+        <%= index+1 %>
+      </td>
+      <td>
+        <%= setting.mid %>
+      </td>
+      <td>
+        <%= setting.payment_type %>
+      </td>
+      <td>
+        <%= setting.provider %>
+      </td>
+      <td>
+        <%= setting.payout_type %>
+      </td>
+      <td>
+        <%= setting.begin_date %>
+      </td>
+      <td>
+        <%= setting.end_date %>
+      </td>
+    </tr>
+    <% end if settings %>
+	</tbody>
+</table>
