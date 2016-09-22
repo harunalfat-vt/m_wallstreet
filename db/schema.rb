@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(version: 20160920034155) do
 
   create_table "settings", force: :cascade do |t|
-    t.string   "mid",          limit: 255, null: false
-    t.string   "payment_type", limit: 255, null: false
-    t.string   "provider",     limit: 255, null: false
-    t.string   "payout_type",  limit: 255, null: false
-    t.string   "begin_date",   limit: 255, null: false
-    t.string   "end_date",     limit: 255, null: false
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "mid",          null: false
+    t.string   "payment_type", null: false
+    t.string   "provider",     null: false
+    t.string   "payout_type",  null: false
+    t.string   "begin_date",   null: false
+    t.string   "end_date",     null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
-  add_index "settings", ["mid", "payment_type", "provider"], name: "index_settings_on_mid_and_payment_type_and_provider", unique: true, using: :btree
+  add_index "settings", ["mid", "payment_type", "provider"], name: "index_settings_on_mid_and_payment_type_and_provider", unique: true
 
 end
