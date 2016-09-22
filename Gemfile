@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'grpc'
+gem 'thrift'
 
 group :development, :test do
   gem 'byebug'

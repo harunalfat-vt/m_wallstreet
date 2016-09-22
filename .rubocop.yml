@@ -1,0 +1,30 @@
+Rails:
+  Enabled: true
+
+AllCops:
+  # Exclude generated files
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/schema.rb'
+    - app/assets/athena-ui/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
